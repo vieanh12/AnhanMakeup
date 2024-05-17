@@ -1,0 +1,50 @@
+body{
+    background-color: #fcecf2;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myCustomFont;
+    src: url(/fonts/JosefinSans-VariableFont_wght.ttf) format('ttf');
+}
+img{
+    height: 240px;
+    width: 250px;
+    margin: 0;
+}
+header{
+    padding: 10px 20px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    max-height: 200px;
+    max-width: 250px;
+}
+
+nav ul {
+    font-family: 'myCustomFont' ;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight:lighter;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    color: #f080f0;
+}
