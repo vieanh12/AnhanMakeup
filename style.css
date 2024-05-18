@@ -42,9 +42,63 @@ nav ul li {
 nav ul li a {
     color: #000000;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 100px 25px;
 }
 
 nav ul li a:hover {
-    color: #f080f0;
+    color: #ffae00;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+@media (max-width: 1368px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .toggle-button {
+        display: block;
+    }
 }
