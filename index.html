@@ -6,27 +6,47 @@
     <title>Ánh An Make Up store & Cosmetics</title>
     <link rel="icon" href="/Source/LOGO//logo Ánh an -01 cut.jpg">
     <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="/Source/LOGO/logo Ánh an new-06.png" alt="Logo của tôi" id="logo">
-            <nav id="ctn" class="navbar">
-                <div class="brand-title"></div>
-                <a href="javascript:void(0)" class="toggle-button" onclick="toggleMenu()"></a>
-                <div class="navbar-links" id="navbarLinks">
-                    <ul>
-                        <li><a href="#about">GIỚI THIỆU</a></li>
-                        <li><a href="#service">DỊCH VỤ MAKE UP</a></li>
-                        <li><a href="#course">KHÓA HỌC</a></li>
-                        <li><a href="#contact">LIÊN HỆ</a></li>
-                        <li><a href="#feedback">FEEDBACK</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <header id="header">
+        <div class="header-top">
+            <a class="header-logo" href="#"><img src="/Source/LOGO/logo Ánh an new-06 new.png" alt="logo"></a>
+            <form class="search-form">
+                <input type="text" placeholder="Tìm kiếm">
+                <button type="Submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="header-icons">
+                <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#user"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div id="icon-navbar" class="icon-navbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+        </div>
+        <div class="col-md-8 header-1" style="justify-content: center; text-align: center; width: 100%;">
+            <ul class="nav-item-box">
+                <li class="nav-item"><a href="/index.html" class="underline">Home</a></li>
+                <li class="nav-item"><a href="#" class="underline">shop</a></li>
+                <li class="nav-item"><a href="#" class="underline">about us</a></li>
+                <li class="nav-item"><a href="#" class="underline">Blog</a></li>
+                <li class="nav-item"><a href="#" class="underline">contact us</a></li>
+            </ul>   
         </div>
     </header>
+    <body>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="/Source/Slide/418162017_1065185918083924_4658689948228823364_n.jpg" alt=""></div>
+                <div class="slide"><img src="/Source/Slide/434847660_1116195899649592_8945978781645095824_n.jpg" alt=""></div>
+                <div class="slide"><img src="/Source/Slide/434658116_1108751980393984_2329158723810216897_n.jpg" alt=""></div>
+                <div class="slide"><img src="/Source/Slide/436320109_1115382973064218_5477573737633349344_n.jpg" alt=""></div>
+                <div class="slide"><img src="/Source/Slide/428671713_1091113565491159_4067635926673036079_n.jpg" alt=""></div>
+            </div>
+        </div>
+    </body>
     <script src="script.js"></script>
 </body>
 </html>
