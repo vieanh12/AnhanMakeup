@@ -10,12 +10,17 @@ img{
     width: 250px;
 }
 
+.header{
+    justify-content: space-between;
+}
+
 .header-top{
-    display:flex;
+    display: flex;
     align-items: center;
     padding: 10px;
     background-color: #fda0cb;
     border-radius: 10px;
+    justify-content: space-between;
 }
 
 
@@ -85,7 +90,7 @@ img{
 }
 
 .header-icons a {
-    margin-left: 40px;
+    margin-left: auto;
     color: #000000;
     font-size: 25px;
     text-decoration: none;
