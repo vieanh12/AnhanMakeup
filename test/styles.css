@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+@font-face {
+    font-family: myCustomFont;
+    src: url(/fonts/JosefinSans-VariableFont_wght.ttf) format('ttf');
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fda0cb;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 140px;
+    width: 280px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các liên kết */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 20px; /* Khoảng cách cố định giữa các icon */
+}
+
+.icons i {
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+#menu-button {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fda0cb;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fda0cb;
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .logo img {
+            height: 50px; /* Điều chỉnh kích thước logo */
+        }
+        
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Khoảng cách cố định giữa các icon */
+        }
+        
+        .icons i {
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        /* Đặt kiểu cho menu button */
+        #menu-button {
+            display: none;
+        }
+        
+        /* Định dạng nav-links */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            background-color: #fda0cb;
+            width: 100%;
+            position: absolute;
+            top: 60px; /* Điều chỉnh nếu cần thiết */
+            left: 0;
+            padding: 10px 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+            }
+        
+            .nav-links.show {
+                display: flex;
+            }
+        
+            .icons {
+                gap: 10px;
+            }
+        
+            #menu-button {
+                display: block;
+            }
+        }
+           border: 1px solid #fff;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    #menu-button {
+        display: block;
+    }
+}
